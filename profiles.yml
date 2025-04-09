@@ -1,0 +1,14 @@
+session_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: SFEDU02-KSB6557
+      user: TRAINING_ROLE
+      password: your_password  # Replace with actual password when deploying
+      role: TRAINING_ROLE
+      database: USER_DB_LYNX
+      warehouse: LYNX_QUERY_WH
+      schema: RAW
+      threads: 4
+      client_session_keep_alive: False
