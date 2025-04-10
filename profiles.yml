@@ -5,7 +5,7 @@ session_analytics:
       type: snowflake
       account: SFEDU02-KSB65579
       user: LYNX
-      password: AkhilNikhil@123
+      password: **************
       role: TRAINING_ROLE
       database: USER_DB_LYNX
       warehouse: LYNX_QUERY_WH
