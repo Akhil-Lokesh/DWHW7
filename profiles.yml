@@ -3,9 +3,9 @@ session_analytics:
   outputs:
     dev:
       type: snowflake
-      account: SFEDU02-KSB6557
-      user: TRAINING_ROLE
-      password: your_password  # Replace with actual password when deploying
+      account: SFEDU02-KSB65579
+      user: LYNX
+      password: AkhilNikhil@123
       role: TRAINING_ROLE
       database: USER_DB_LYNX
       warehouse: LYNX_QUERY_WH

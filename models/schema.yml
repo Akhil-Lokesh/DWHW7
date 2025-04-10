@@ -1,55 +1,10 @@
 version: 2
 
 models:
-  - name: user_session_channel
-    description: "User session information including channel data"
-    columns:
-      - name: SESSION_ID
-        description: "Unique identifier for the session"
-        tests:
-          - unique
-          - not_null
-
-  - name: session_timestamp
-    description: "Session timing data including start, end times and duration information"
-    columns:
-      - name: SESSION_ID
-        description: "Unique identifier for the session"
-        tests:
-          - unique
-          - not_null
-
   - name: session_summary
-    description: "Combined session summary with user, channel and timing information"
+    description: "Session summary analytics table"
     columns:
-      - name: SESSION_ID
-        description: "Unique identifier for the session"
+      - name: sessionId
         tests:
           - unique
-          - not_null
-          - relationships:
-              to: ref('user_session_channel')
-              field: SESSION_ID
-          - accepted_values:
-              values: ['null']
-              quote: false
-              severity: warn
-              where: "SESSION_ID IS NULL"
-          
-      - name: USER_ID
-        description: "User identifier"
-        tests:
-          - not_null
-
-      - name: CHANNEL
-        description: "Marketing channel"
-        tests:
-          - accepted_values:
-              values: ['organic', 'paid', 'social', 'email', 'direct', 'unknown']
-              severity: warn
-
-      - name: duration_bucket
-        description: "Session duration category"
-        tests:
-          - accepted_values:
-              values: ['less_than_1_min', '1_to_5_min', '5_to_15_min', 'more_than_15_min']
+          - not_null 

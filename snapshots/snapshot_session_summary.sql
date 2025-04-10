@@ -1,11 +1,14 @@
 {% snapshot snapshot_session_summary %}
 
-{% set metadata_config = {
-    'unique_key': 'SESSION_ID',
-    'strategy': 'timestamp',
-    'updated_at': 'dbt_updated_at',
-    'target_schema': 'SNAPSHOTS'
-} %}
+{{
+    config(
+      target_schema='snapshot',
+      unique_key='sessionId',
+      strategy='timestamp',
+      updated_at='ts',
+      invalidate_hard_deletes=True
+    )
+}}
 
 SELECT * FROM {{ ref('session_summary') }}
 

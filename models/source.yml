@@ -1,24 +1,9 @@
 version: 2
 
 sources:
-  - name: raw_data
+  - name: raw
     database: USER_DB_LYNX
-    schema: RAW
+    schema: RAW_SOURCE
     tables:
       - name: USER_SESSION_CHANNEL
-        description: Contains information about user sessions and their channels
-        columns:
-          - name: SESSION_ID
-            description: The unique identifier for a session
-          - name: USER_ID
-            description: The unique identifier for a user
-          - name: CHANNEL
-            description: The marketing channel associated with the session
-
       - name: SESSION_TIMESTAMP
-        description: Contains timestamp information for sessions
-        columns:
-          - name: SESSION_ID
-            description: The unique identifier for a session
-          - name: TIMESTAMP
-            description: The timestamp of the session event
