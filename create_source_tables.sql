@@ -1,8 +1,8 @@
--- This SQL script is for reference only.
--- It was used to create and populate the source tables in Snowflake.
--- You must run this script in Snowflake before running dbt models.
+-- Script to create source tables in Snowflake
+-- These tables store user session and timestamp data
+-- Author: Akhil Lokesh
 
--- Use the correct database and schema
+-- Set up database and schema
 USE DATABASE USER_DB_LYNX;
 USE SCHEMA RAW_SOURCE;
 

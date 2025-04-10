@@ -1,3 +1,7 @@
+-- Input model for session timestamp data
+-- Standardizes timestamp fields from the source table
+-- Author: Akhil Lokesh
+
 SELECT
   SESSION_ID as sessionId,
   TIMESTAMP as ts

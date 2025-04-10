@@ -1,3 +1,7 @@
+-- Snapshot configuration for tracking historical changes in session_summary
+-- Uses timestamp-based strategy to track changes over time
+-- Author: Akhil Lokesh
+
 {% snapshot snapshot_session_summary %}
 
 {{

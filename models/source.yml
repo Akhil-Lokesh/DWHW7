@@ -1,3 +1,7 @@
+# Source definitions for Snowflake tables
+# Defines the connection to raw source tables
+# Author: Akhil Lokesh
+
 version: 2
 
 sources:

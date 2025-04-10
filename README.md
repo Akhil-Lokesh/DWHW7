@@ -1,21 +1,21 @@
 # Session Analytics dbt Project
 
-This dbt project connects to Snowflake and provides models for analyzing user session data. It demonstrates using dbt with Snowflake to transform source data into meaningful output and implement snapshot functionality.
+This is my dbt project that connects to Snowflake for analyzing user session data. I've created a complete data pipeline that transforms source data into meaningful analytics and implements snapshot functionality for historical tracking.
 
 ## Project Structure
 
-- `models/input/`: Contains input models that source data from raw tables
-- `models/output/`: Contains output models that join and transform input models
-- `snapshots/`: Contains snapshot configurations for historical tracking
-- `tests/`: Contains custom tests
-- `macros/`: Contains custom macros
-- `create_source_tables.sql`: SQL script used to create source tables in Snowflake
+- `models/input/`: Input models that source data from raw tables
+- `models/output/`: Output models that join and transform input models
+- `snapshots/`: Snapshot configurations for historical tracking
+- `tests/`: Custom tests
+- `macros/`: Custom macros
+- `create_source_tables.sql`: My SQL script to create source tables in Snowflake
 
 ## Prerequisites
 
 Before running this project, you need to:
 1. Set up a Snowflake account
-2. Create the required schemas and tables in Snowflake (see `create_schemas.sql` and `create_source_tables.sql`)
+2. Create the required schemas and tables in Snowflake using my scripts
 
 ## Setup
 
